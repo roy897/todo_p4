@@ -1,0 +1,77 @@
+body{
+   background-color: rgb(193, 169, 126);
+}
+.m{
+    text-decoration: line-through;
+}
+.box{
+  width: 30%;
+  height: 500px;
+  margin: auto;
+  border: 1px solid black;
+}
+.mainDiv{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(213, 200, 200, 0.477);
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 8px 20px;    
+}
+.inputBox{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+.inputBox>input{
+    width: 17px;
+    height: 17px;
+    
+}
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    
+  }
+  
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .rating label:last-child {
+    position: static;
+  }
+ 
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .rating label:last-child .icon {   
+    color: #fff;
+  }
+  
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: rgb(170, 255, 0);
+  }
+  
